@@ -1,4 +1,5 @@
 import 'package:corona_app/Korona/Bloc/CoronaBloc.dart';
+import 'package:corona_app/Korona/UI/Chart/Charts.dart';
 import 'package:corona_app/Korona/UI/HomePage.dart';
 import 'package:corona_app/Weather/Bloc/weather/bloc.dart';
 import 'package:corona_app/Weather/Repository/weather_repository.dart';

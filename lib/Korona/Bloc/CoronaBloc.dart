@@ -1,5 +1,6 @@
 import 'package:corona_app/Korona/Bloc/CoronaEvent.dart';
 import 'package:corona_app/Korona/Bloc/CoronaState.dart';
+import 'package:corona_app/Korona/Model/Chart/BarChart.dart';
 import 'package:corona_app/Korona/Model/Corona.dart';
 import 'package:corona_app/Korona/Repository/Repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -21,6 +22,10 @@ class CoronaBloc extends Bloc<CoronaEvent, CoronaState> {
       } else {
         yield CoronaLoaded(loadData);
       }
+    } else if (event is GetBarChart) {
+      List<BarChart> _barChartList = LoadRepository().loadBarChart();
+
+      yield BarChartSate(_barChartList);
     }
   }
 }

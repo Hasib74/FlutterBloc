@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:corona_app/Korona/Model/Chart/BarChart.dart';
 import 'package:corona_app/Korona/Model/Corona.dart';
 import 'package:equatable/equatable.dart';
 
@@ -43,4 +44,14 @@ class CoronaError extends CoronaState {
   @override
   // TODO: implement props
   List<Object> get props => [error];
+}
+
+class BarChartSate extends CoronaState {
+  List<BarChart> list_bar_chart;
+
+  BarChartSate(this.list_bar_chart);
+
+  @override
+  // TODO: implement props
+  List<Object> get props => [list_bar_chart];
 }

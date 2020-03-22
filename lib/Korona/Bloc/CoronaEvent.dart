@@ -1,3 +1,5 @@
+import 'package:corona_app/Korona/Model/Chart/BarChart.dart';
+import 'package:corona_app/Korona/Model/Chart/BarChart.dart';
 import 'package:corona_app/Korona/Model/Corona.dart';
 import 'package:equatable/equatable.dart';
 
@@ -13,4 +15,10 @@ class GetCoronaData extends CoronaEvent {
   @override
   // TODO: implement props
   List<Object> get props => [url];
+}
+
+class GetBarChart extends CoronaEvent {
+  @override
+  // TODO: implement props
+  List<Object> get props => [];
 }
